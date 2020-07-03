@@ -1,12 +1,10 @@
 <?
 
+$query = require 'bootstrap.php';
 require 'Exercise.php';
 require 'functions.php';
-require 'database/Connection.php';
-require 'database/QueryBuilder.php';
 
-$pdo = Connection::make();
-$query = new QueryBuilder($pdo);
-$exercises = $query->selectAll('exercises');
+$exercises = $query->selectAll('exercises', 'Exercise');
+
 
 require 'index.view.php';
