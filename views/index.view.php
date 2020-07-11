@@ -1,9 +1,10 @@
-<? require('partials/head.php'); 
-    $html = '';
-    $html .= '<ul>';
-    foreach ($exercises as $exercise) {
-        $html .= '<li>' . $exercise->description . '</li>';
-    }
-    $html .= '</ul>';
-    echo $html;
-require 'partials/footer.php'; ?>
+<? require('partials/head.php'); ?>
+
+<h1>Submit Form</h1>
+
+<form method="POST" action="/fitness_app/names">
+    <input name="name"></input>
+    <button type="submit" >Submit</button>
+</form>
+
+<? require 'partials/footer.php'; ?>
