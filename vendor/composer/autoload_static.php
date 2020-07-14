@@ -13,6 +13,7 @@ class ComposerStaticInit3ca41844c309ffc933f52f9257662398
         'Composer\\Autoload\\ComposerStaticInit3ca41844c309ffc933f52f9257662398' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'Exercise' => __DIR__ . '/../..' . '/core/Exercise.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/database/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
