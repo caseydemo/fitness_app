@@ -2,6 +2,15 @@
 
 <h1>Submit Form</h1>
 
+<ul>
+<?
+foreach ($users as $user) {
+    echo '<li>' . $user['name'] . '</li>';
+}
+?>
+</ul>
+
+
 <form method="POST" action="/fitness_app/names">
     <input name="name"></input>
     <button type="submit" >Submit</button>
