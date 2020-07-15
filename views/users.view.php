@@ -1,8 +1,8 @@
 <? require('partials/head.php'); ?>
 
-<h1>Home Page</h1>
+<h1>All Users</h1>
 
-<!-- <ul>
+<ul>
 <?
 foreach ($users as $user) {
     echo '<li>' . $user['name'] . '</li>';
@@ -11,9 +11,9 @@ foreach ($users as $user) {
 </ul>
 
 
-<form method="POST" action="/fitness_app/names">
+<form method="POST" action="/fitness_app/users">
     <input name="name"></input>
     <button type="submit" >Submit</button>
-</form> -->
+</form>
 
 <? require 'partials/footer.php'; ?>
