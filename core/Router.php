@@ -1,5 +1,5 @@
 <?
-
+namespace App\Core;
 class Router {
     
     public $routes = [
@@ -53,6 +53,8 @@ class Router {
      * 
      */
     public function callAction($controller, $action) {
+
+        $controller = "App\\Controllers\\{$controller}";
 
         $controller = new $controller;
         
